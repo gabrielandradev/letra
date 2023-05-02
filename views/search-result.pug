@@ -1,0 +1,16 @@
+include navigation.pug
+include book-list.pug
+
+doctype
+html(lang='es')
+        head
+                meta(charset='utf-8')
+                link(rel="stylesheet", href="stylesheets/style.css")
+                title Letra
+        body
+                +navigation(query)
+                header
+                        h1 Letra
+                main
+                        h2 Resultados de la busqueda
+                        +list_books(results)

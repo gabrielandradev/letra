@@ -1,0 +1,21 @@
+include navigation.pug
+
+doctype
+html(lang='es')
+        head
+                meta(charset='utf-8')
+                link(rel="stylesheet", href="stylesheets/style.css")
+                title #{book.title} - Letra
+        body
+                +navigation()
+                header
+                        h1= book.title
+                        p Por 
+                                u=book.author
+                hr
+                main
+
+                        p= book.synopsis
+
+                        h3 Este libro está disponible en:
+                        a(href=book.filepath) Texto simple (UTF-8)

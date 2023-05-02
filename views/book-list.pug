@@ -1,0 +1,6 @@
+mixin list_books(books)
+        for book in books
+                p
+                        a(href=book.doc._id)= book.doc.title
+                        br
+                        =book.doc.author

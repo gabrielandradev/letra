@@ -1,0 +1,7 @@
+mixin navigation(query='')
+        nav
+                a(href="/") Inicio
+                form(action="/search", method="POST")
+                        label(for="search") Busca un libro o autor 
+                        input(type="text" id="search" name="q" value=query required)
+                        input(type="submit" value="Buscar")

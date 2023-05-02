@@ -1,0 +1,17 @@
+include navigation.pug
+include book-list.pug
+
+doctype
+html(lang='es')
+        head
+                meta(charset='utf-8')
+                link(rel="stylesheet", href="stylesheets/style.css")
+                title Letra
+        body
+                +navigation()
+                header
+                        h1 Letra
+                hr
+                main
+                        h2 Libros disponibles:
+                        +list_books(books)
