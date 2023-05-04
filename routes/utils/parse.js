@@ -5,4 +5,8 @@ function toSlugCase(text) {
         .replace(/[^\w-]+/g, '');
 }
 
-module.exports = toSlugCase;
+function createBookFilename(title, author) {
+    return toSlugCase(title + " " + author);
+}
+
+module.exports = createBookFilename;

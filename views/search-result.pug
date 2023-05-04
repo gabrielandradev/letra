@@ -5,12 +5,14 @@ doctype
 html(lang='es')
         head
                 meta(charset='utf-8')
+                meta(name="viewport", content="width=device-width, initial-scale=1.0")
                 link(rel="stylesheet", href="stylesheets/style.css")
                 title Letra
         body
                 +navigation(query)
                 header
                         h1 Letra
+                hr
                 main
                         h2 Resultados de la busqueda
                         +list_books(results)
